@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Farming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #8BC34A;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+            --white: #fff;
+            --dark-green: #388E3C;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+            padding-top: 60px; /* Space for fixed header */
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark-green);
+            margin-bottom: 0.8em;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            text-align: center;
+            color: var(--white);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 1.5em;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .topic{
+            padding-top: 50px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1em 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0.5em 0;
+        }
+
+        nav ul li {
+            margin: 0.5em 1em;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--light-bg);
+            text-decoration: none;
+        }
+
+        /* Sections */
+        section {
+            padding: 2em 0;
+            background-color: var(--light-bg);
+            margin-bottom: 1em;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:nth-of-type(even) {
+            background-color: var(--white);
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1.5em auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Benefits List */
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 1.5em;
+        }
+
+        .benefits-list li {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            margin-bottom: 0.8em;
+            padding: 1em 1.5em;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .benefits-list li:before {
+            content: '✓';
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-green);
+            color: var(--white);
+            text-align: center;
+            padding: 1.5em 0;
+            margin-top: 2em;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 2.8em;
+            }
+      
+            .container {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 2.2em;
+            }
+
+            nav ul {
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 0 1.2em;
+            }
+
+            section {
+                padding: 3em 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+    .topic {
+        padding-top: 80px; /* reduced padding for smaller screens */
+    }
+    .container {
+        padding: 10px; /* less padding on mobile */
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Organic Farming</h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#marketing">Marketing</a></li>
+                    <li><a href="#economics">Economics</a></li>
+                    <li><a href="#nutrition">Nutrition & Disease</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#future">Future Outlook</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div class="container">
+                <h2 class="topic">Organic Farming – Introduction</h2>
+                <p>Organic farming is a method of crop and livestock production that involves much more than choosing not to use pesticides, fertilizers, genetically modified organisms, antibiotics, and growth hormones. It is a holistic system designed to optimize the productivity and fitness of diverse communities within the agroecosystem, including soil organisms, plants, livestock, and people. The primary goal is to grow food using natural processes and without synthetic chemicals, fostering ecological balance and biodiversity.</p>
+                <img src="img1.jpg" alt="Organic farming field with healthy crops">
+            </div>
+        </section>
+
+        <section id="marketing">
+            <div class="container">
+                <h2>Marketing – Benefits of Chemical-Free Food</h2>
+                <p>The marketing of organic produce heavily emphasizes the health and environmental benefits of chemical-free food. Consumers are increasingly aware of the potential risks associated with synthetic pesticides and herbicides, leading to a growing demand for organic options. Marketing efforts highlight the purity of the food, the sustainable practices used, and the contribution to a healthier planet, appealing to conscious consumers willing to pay a premium for quality and safety.</p>
+                <img src="img2.jpg" alt="Fresh organic produce in a market">
+            </div>
+        </section>
+
+        <section id="economics">
+            <div class="container">
+                <h2>Economics – Costs, Labor, and Yield</h2>
+                <p>Economically, organic farming presents a unique balance. While initial yields might sometimes be lower compared to conventional intensive farming, the reduced input costs from eliminating synthetic fertilizers and pesticides can significantly improve profit margins. Labor costs can be higher due to more intensive manual weed control and natural pest management techniques. However, the premium prices fetched by organic products in the market often offset these factors, making it a viable and often profitable agricultural model.</p>
+                <img src="img3.jpg" alt="Farmer examining organic crops">
+            </div>
+        </section>
+
+        <section id="nutrition">
+            <div class="container">
+                <h2>Nutrition and Disease Management</h2>
+                <p>Organic farming employs various natural strategies for nutrition and disease management. Crop rotation is crucial, preventing the buildup of pests and diseases associated with a single crop and improving soil fertility. Cover cropping enriches the soil with organic matter, suppresses weeds, and prevents erosion. Composting provides essential nutrients and beneficial microorganisms, enhancing soil health and plant resilience without the need for synthetic additives, leading to stronger, healthier plants.</p>
+                <img src="img4.jpg" alt="Compost pile and healthy soil">
+            </div>
+        </section>
+
+        <section id="benefits">
+            <div class="container">
+                <h2>Key Benefits of Organic Farming</h2>
+                <ul class="benefits-list">
+                    <li><strong>Healthier Food:</strong> Reduced exposure to pesticide residues.</li>
+                    <li><strong>Environmental Protection:</strong> Preserves biodiversity and soil health.</li>
+                    <li><strong>Increased Income:</strong> Premium prices for organic products.</li>
+                    <li><strong>Employment Generation:</strong> Often more labor-intensive.</li>
+                    <li><strong>Water Quality:</strong> Prevents chemical runoff into water sources.</li>
+                    <li><strong>Cost Savings:</strong> Reduced expenditure on synthetic inputs.</li>
+                    <li><strong>No Synthetic Chemicals:</strong> Safer for farmers and consumers.</li>
+                </ul>
+                <img src="img5.jpg" alt="Diverse healthy organic vegetables">
+            </div>
+        </section>
+
+        <section id="future">
+            <div class="container">
+                <h2>Future Outlook – Growing Demand & Technology</h2>
+                <p>The future of organic farming looks promising with a rapidly growing global demand for organic products. Governments worldwide are increasingly supporting organic agriculture through subsidies and favorable policies. Technological advancements, including AI for optimized resource management, blockchain for supply chain transparency, and precision agriculture techniques adapted for organic methods, are set to further enhance efficiency and sustainability, ensuring a robust future for chemical-free food production.</p>
+                <img src="img6.jpg" alt="Futuristic farm with drone technology">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Organic Farming. All rights reserved.</p>
+            <P>Designed and Developed by <B>JASS</B></P>
+        </div>
+    </footer>
+</body>
+</html>
+
+
